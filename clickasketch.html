@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+ Mitzi Bustamante
+ October 16 2018
+ CISC 131
+
+  Passing the mouse over a color in the drawing color palette selects
+  that color as the one to be used for drawing. Each time you click
+  in the drawing area, the color is being used.
+-->
+<html lang="en">
+<head>
+  <title>this will appear on the tab in the browser</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <script src="clickasketch.js"></script>
+
+  <style>
+#header
+  {
+  height:2em;
+  font-size: 25px;
+  width: 7.5em;
+  }
+#colorPicker {float: left;width: 4.5em;}
+#currentColor
+  {
+  border: 1px solid black;
+  float: right;
+  height: 1em;
+  width: 1em;
+  }
+.colorChoice
+  {
+  border: .1em solid black;
+  height: 3.5em;
+  margin-top: .25em;
+  margin-bottom: .25em;
+  width: 3.5em;
+  }
+.canvas
+  {
+  background-color: black;
+
+  float: left;
+  height:1em;
+  width:1em;
+  }
+.newRow{clear:left;}
+#drawingArea {border: 3px solid black; float: left;}
+  </style>
+</head>
+<body>
+<div id="page">
+<div id="header">Click-A-Sketch
+<div id="currentColor"></div></div>
+<div id="colorPicker"></div>
+<div id="drawingArea"></div>
+</div> <!--id="page"-->
+</body>
+</html>
